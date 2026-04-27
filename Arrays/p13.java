@@ -1,3 +1,4 @@
+//segragate 0's and 1's
 package Arrays;
 
 import java.util.Scanner;
@@ -25,6 +26,7 @@ public class p13 {
       }
     }
 
+    //Two pass solution
     for(int i = 0; i< numberOfZeros; i++){
     arr[i] = 0;
       
