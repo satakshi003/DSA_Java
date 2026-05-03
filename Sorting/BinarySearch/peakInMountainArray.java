@@ -4,8 +4,8 @@ public class peakInMountainArray {
   public static void main(String[] args) {
     int[] arr = {2, 4, 6, 8, 10, 8, 5};
     int n = arr.length;
-    int start = 0;
-    int end = n-1;
+    int start = 1;
+    int end = n-2;
 
     while(start<=end){
       int mid = start + ((end - start)/2);
