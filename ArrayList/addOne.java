@@ -34,6 +34,7 @@ public class addOne {
       arr.add(0, 1); // insert at beginning
     }
 
+    Collections.reverse(arr);
     System.out.println(arr);
    }
 }
