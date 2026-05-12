@@ -36,7 +36,8 @@ public class Spirally_traversing_a_matrix {
       bottom--;
       }
       
-      if(left<=right){
+      if(left<=right)//if any col is left
+      {
         for(int i =bottom; i>=top; i--){
         System.out.print(arr[i][left]+ " ");
       }
