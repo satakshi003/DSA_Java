@@ -29,7 +29,7 @@ public class matrix_multiplication {
       for(int j=0; j<ans[0].length; j++){
         ans[i][j] = 0;
         for(int k = 0; k<ans.length; k++){
-          ans[i][j] += arr1[i][k] * arr2[k][j];
+          ans[i][j] += arr1[i][k] * arr2[k][j];//formula
         }
       }
     }
