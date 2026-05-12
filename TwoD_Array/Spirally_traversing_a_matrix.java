@@ -49,7 +49,7 @@ public class Spirally_traversing_a_matrix {
       for(int j = 0; j<arr[0].length; j++){
         System.out.print(arr[i][j]+ " ");
       }
-      System.out.println();
+      System.out.println();//print matrix
     }
 
   }
