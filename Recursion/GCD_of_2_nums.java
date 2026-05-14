@@ -16,10 +16,10 @@ public class GCD_of_2_nums {
 
     //GCD using Recursion
     public static int gcd(int a, int b){
-      if(b==0){
-        return a;
+      if(a==0){
+        return b;
       } 
-      return (gcd(b, a%b));
+      return (gcd(b%a, a));
     }
     public static void main(String[] args) {
       System.out.println(gcd(12, 16));
