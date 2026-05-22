@@ -90,6 +90,27 @@ static class LinkedList{//user defined data structure
     }
   }
 
+  void delete_at_index(int idx){
+    Node temp = head;
+     if(head == null){
+      System.out.println("Nothing to delete");
+    }
+    else if(head == tail){
+      head = null;
+    }
+    else if(idx == 0){
+      head = head.next;
+      return;
+    }
+    else{
+      for(int i = 0; i<idx-1; i++){
+      temp = temp.next;
+    }
+      temp.next = temp.next.next;
+    }
+    size--;
+  }
+  
   void display(){
     if(head == null) return;
 
@@ -106,15 +127,16 @@ static class LinkedList{//user defined data structure
   public static void main(String[] args) {
     LinkedList ll = new LinkedList();
     ll.addAtTail(10);
-    ll.addAtTail(10);
-    ll.addAtTail(10);
-    ll.addAtTail(10);
-    ll.addAtTail(10);
-    ll.addAtHead(20);
+    ll.addAtTail(20);
+    ll.addAtTail(30);
+    ll.addAtTail(40);
+    ll.addAtTail(50);
     ll.addAtHead(60);
+    ll.addAtHead(70);
     ll.display();
     //ll.deleteAtHead();
-    ll.insert_at_index(2, 30);
+    //ll.insert_at_index(2, 30);
+    ll.delete_at_index(4);
     ll.display();
     ll.search(60);
     System.out.println("Size"+ll.size);
