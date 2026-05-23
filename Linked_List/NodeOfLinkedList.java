@@ -33,7 +33,5 @@ public class NodeOfLinkedList {
     b.next = c;
     c.next = d;
     d.next = e;
-   
-
   }
 }
