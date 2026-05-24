@@ -28,7 +28,7 @@ public class NodeOfLinkedList {
     Node e = new Node(50);
     //e.val = 20;
 
-  //linking every node to next node 
+  //linking every node to next node .
     a.next = b;
     b.next = c;
     c.next = d;
